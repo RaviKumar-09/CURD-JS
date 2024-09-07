@@ -16,3 +16,5 @@ const aliensSchema = new mongoose.Schema({
 
     },
 })
+
+module.exports = mongoose.model('Alien', aliensSchema)
