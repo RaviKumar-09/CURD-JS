@@ -1,8 +1,14 @@
 const express = require('express')
 const router = express.Router()
 
-router.get('/', (req, res) => {
-    res.send('Get request')
+router.get('/', async(req, res) => {
+    try{
+        const aliens = 
+
+    }catch(err){
+        res.send('Error' + err)
+    }
+   
 })
 
 module.exports = router
