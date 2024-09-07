@@ -15,7 +15,7 @@ con.on('opne',  () => {
 })
 
 
-const alienRouter = require('../routesr/alien')
+const alienRouter = require('../routers/alien')
 app.use('/aliens', alienRouter)
 
 
