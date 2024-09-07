@@ -14,6 +14,11 @@ con.on('opne',  () => {
 
 })
 
+
+const alienRouter = require('../routesr/alien')
+app.use('/aliens', alienRouter)
+
+
 app.listen(9000, () => {
     console.log('server started')
 })
