@@ -6,6 +6,7 @@ const Alien = require('../models/alien')
 router.get('/', async(req, res) => {
     try{
         const aliens = Alien.find()
+        res.json(aliens)
     }catch(err){
         res.send('Error' + err)
     }
